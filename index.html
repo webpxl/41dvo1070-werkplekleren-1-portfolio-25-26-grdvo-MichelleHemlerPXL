@@ -2,14 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>portofolio michelle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- Added Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <!-- Optionally add Bootstrap Icons (uncomment if needed) -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"> -->
 </head>
 <body>
-<p>michelle hemler</p>
+
+<header class="header">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#" class="nav-link" data-target="home-content">over mij</a></li>
+            <li><a href="#" class="nav-link" data-target="project-content">projecten</a></li>
+            <li><a href="#" class="nav-link" data-target="home-content">contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="home-content" class="content-section active-section">
+
+    <section class="hero-section">
+        <div class="portfolio-info">
+            <h1>Portofolio</h1>
+            <h2>Michelle Hemler</h2>
+            <p class="subtitle">Student</p>
+        </div>
+    </section>
+
+    <div class="main-content-area">
+
+        <section id="over-mij" class="info-with-image light-card">
+
+            <div class="image-box grey-box"></div>
+
+            <div class="info-text">
+                <h3>Meer informatie over mij</h3>
+                <p>Ik ben Michelle Hemler, 19 jaar en student aan Hogeschool PXL. Als creatief en leergierig persoon haal ik energie uit het ontwikkelen van nieuwe ideeën en het zoeken naar originele oplossingen. Ik werk graag nauwkeurig en ben gemotiveerd om mijn vaardigheden verder uit te bouwen, zowel binnen mijn studies als in een professionele omgeving.
+
+                    Met mijn open houding en enthousiasme ben ik een waardevolle aanvulling in elk team.</p>
+            </div>
+        </section>
+
+        <section class="section-card dark-card wide-card">
+            <h3>Waarom ik voor digitale vorming koos</h3>
+            <p>Ik kies voor digitale vormgeving omdat ik graag creatief bezig ben en mijn ideeën tot leven breng. Ik geloof dat inspiratie en de verschillende digitale tools mij de perfecte combinatie van creativiteit en techniek bieden. Ik wil mezelf ontwikkelen in een vakgebied waar ik mijn creativiteit kan blijven inzetten.</p>
+        </section>
+
+    </div>
+
+</main>
+
+<section id="project-content" class="content-section hidden-section">
+
+    <div class="content-wrapper">
+
+        <div class="project-column">
+            <h2 id="projecten-heading" class="section-heading">projecten</h2>
+
+            <article class="project-card">
+                <div class="project-image-placeholder grey-box"></div>
+                <div class="project-text">
+                    <h4>WeAre</h4>
+                    <p>We hebben met onze klas WeAre opgericht: een volledig gepersonaliseerd wiskunde-boek dat we hebben ontworpen, geprint, gedrukt en ingericht. Van het ontwerp van de kleding tot de marketing, alles is in handen van de klasstudenten. Uiteindelijk hebben we onze eigen kleding ook echt verkocht aan klanten, waardoor WeAre een volledig creatief en praktisch uitgevoerd eindproduct werd.</p>
+                </div>
+            </article>
+
+            <article class="project-card reverse-layout">
+                <div class="project-image-placeholder grey-box"></div>
+                <div class="project-text">
+                    <h4>UI design</h4>
+                    <p>We werken momenteel aan onze eigen dagrugzak, een groepsproject waarin we alles zelf ontwikkelen: van het ontwerp van de ringen tot de branding, het ontwerpproces en de gedetailleerde informatie. Het project is nog in volle ontwikkeling, maar we bouwen elke week aan onze rugzak, zelfgemaakte collectie en een sterk concept eromheen.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image-placeholder grey-box"></div>
+                <div class="project-text">
+                    <h4>Etalage</h4>
+                    <p>Voor deze opdracht ontwierp ik mijn eigen etalageconcept. Ik begon met het manueel creëren van een bloem, die ik daarna digitaal fotografeerde en bewerkte. Ik speelde de beelden digitaal uit en zette ze om in een professioneel ogende interieurdecoratie. Ik ervaar vreugde in de rijke combinatie van handmatig werk, fotografie en digitale vormgeving. Ik kan mijn creativiteit op verschillende manieren inzetten en tot een sterk eindproduct brengen.</p>
+                </div>
+            </article>
+
+            <section class="section-card light-card full-width">
+                <p>Wat mij speciaal maakt, is dat ik altijd nieuwsgierig blijf naar hoe dingen werken. Of het nu gaat om een nieuwe tekentechniek, een app of een digitale tool, ik probeer graag uit wat mogelijk is en combineer dat met mijn eigen creatieve ideeën.</p>
+                <a href="#" class="button-home nav-link" data-target="home-content">Home</a>
+            </section>
+
+            <footer id="contact-info" class="contact-section">
+                <h4>Contact</h4>
+                <p>Tel: +32 470 85 40 54</p>
+                <p>E-mail: michellehemler226@icloud.com</p>
+            </footer>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+
+
+
 </body>
 </html>
