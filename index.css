@@ -1,0 +1,238 @@
+* {
+    /* padding: 0;
+     margin: 0;*/
+    box-sizing: border-box;
+}
+/* Globale stijlen en resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* Navigatie (ongewijzigd) */
+.header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #2549d9;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 0;
+    display: block;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #333;
+}
+
+/* ------------------------------------------- */
+/* LAYOUT EN TOGGLE STIJLEN */
+/* ------------------------------------------- */
+
+/* Verbergen / Tonen (ongewijzigd) */
+.content-section {
+    display: none;
+    padding-top: 20px;
+}
+
+.content-section.active-section {
+    display: block;
+}
+
+/* Algemene container voor de HOME-content (centreren) */
+.main-content-area {
+    max-width: 1000px; /* Bepaal de maximale breedte voor de gecentreerde inhoud */
+    margin: 0 auto;
+    padding: 0 30px 30px 30px;
+}
+
+/* 1. Hero Sectie */
+.hero-section {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.hero-section h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.hero-section .subtitle {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* 2. Meer informatie over mij (Afbeelding naast Tekst) */
+.info-with-image {
+    display: flex; /* Zorgt dat de afbeelding en tekst naast elkaar staan */
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.info-with-image .image-box {
+    width: 250px; /* Vaste breedte voor de vierkante afbeelding (zoals in wireframe) */
+    height: 250px;
+    min-width: 200px; /* Voorkom dat de afbeelding te klein wordt */
+    background-color: #ccc;
+}
+
+.info-with-image .info-text {
+    flex-grow: 1; /* Tekst neemt de rest van de ruimte in */
+}
+
+/* 3. Waarom ik koos (Brede Donkere Card) */
+.section-card {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.dark-card {
+    background-color: #333;
+    color: #fff;
+    text-align: center; /* Centreer de tekst in deze kaart (optioneel, maar ziet er vaak strakker uit) */
+}
+
+.light-card {
+    background-color: #fff;
+    color: #333;
+}
+
+/* ------------------------------------------- */
+/* PROJECTEN SECTIE STIJLEN (ongewijzigd behalve de container namen) */
+/* ------------------------------------------- */
+
+#project-content .content-wrapper {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px 30px 30px;
+}
+
+.project-column {
+    max-width: 850px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.section-heading {
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    display: flex;
+    margin-bottom: 50px;
+    background-color: #fff;
+    align-items: stretch;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.project-text {
+    padding: 20px;
+    flex: 1;
+}
+
+.project-image-placeholder {
+    width: 40%;
+    min-height: 200px;
+    background-color: #ccc;
+}
+
+.reverse-layout {
+    flex-direction: row-reverse; /* Zorgt voor de om-en-om afwisseling */
+}
+
+/* ... (De rest van de stijlen, inclusief Contact en Media Queries, blijven zoals in mijn laatste antwoord) ... */
+
+/* === RESPONSIVITEIT: Mobiel (alleen 1 kolom) === */
+@media (max-width: 900px) {
+
+    .hero-section {
+        max-width: 100%;
+        padding: 30px 15px 30px 15px;
+    }
+
+    /* Home sectie op mobiel: stapel de afbeelding en tekst */
+    .info-with-image {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .info-with-image .image-box {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    /* ... (De rest van de mobiele stijlen voor Projecten etc. blijven hetzelfde) ... */
+}
+
+
+/* Home Knop */
+.button-home {
+    /* ... (Stijlen voor de Home knop) ... */
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    padding: 10px 30px;
+    background-color: #2549d9;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.portfolio-info
+h1 {
+    font-size: 5.5em;
+    margin-bottom: 5px;
+    font-weight: 200;
+    font-family: "Roboto Thin";
+}
+
+
+.portfolio-info
+h2 {
+    font-size: 2em;
+    font-weight: 100;
+    font-family: "Roboto Light";
+}
