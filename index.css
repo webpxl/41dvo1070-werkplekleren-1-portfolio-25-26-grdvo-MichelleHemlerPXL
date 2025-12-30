@@ -49,7 +49,7 @@ body {
 }
 
 .nav-link.active {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #f8c8dc;
 }
 
 /* ------------------------------------------- */
@@ -123,8 +123,8 @@ body {
 }
 
 .dark-card {
-    background-color: #333;
-    color: #fff;
+    background-color: #f8c8dc;
+    color: #000000;
     text-align: center; /* Centreer de tekst in deze kaart (optioneel, maar ziet er vaak strakker uit) */
 }
 
@@ -235,4 +235,240 @@ h2 {
     font-size: 2em;
     font-weight: 100;
     font-family: "Roboto Light";
+}
+
+
+/* Zorgt dat afbeeldingen de box vullen zonder te vervormen */
+.image-box img,
+.project-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Dit zorgt dat de foto het vlak vult */
+}
+
+.grey-box {
+    background-color: transparent;
+}
+
+
+
+
+
+/* De kaart past zich nu aan de hoogte van de originele foto aan */
+.project-card {
+    display: flex;
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    align-items: stretch; /* Zorgt dat de tekstkolom even hoog is als de foto */
+    width: 100%;
+}
+
+/* De foto-container: we zetten de breedte vast, maar laten de hoogte vrij */
+.project-image-placeholder {
+    flex: 0 0 500px; /* Pas dit getal aan als je de foto breder of smaller wilt */
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: flex-start; /* Foto begint bovenaan */
+}
+
+/* De afbeelding behoudt zijn eigen verhoudingen en verkleint niet onnodig */
+.project-img {
+    width: 100%;
+    height: auto;    /* Cruciaal: de foto behoudt zijn eigen hoogte */
+    display: block;
+    object-fit: contain;
+}
+
+/* De tekstkolom sluit nu perfect aan op de hoogte van de foto */
+.project-text {
+    flex: 1;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Tekst begint bovenaan, gelijk met de foto */
+}
+
+/* De tekst zelf iets compacter maken zodat het mooi past */
+.project-text h4 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2549d9;
+}
+
+.project-text p {
+    font-size: 0.95em; /* Iets kleiner lettertype voor de tekst */
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+/* Om-en-om layout */
+.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+/* De hoofdkaart van elk project */
+.project-card {
+    display: flex;
+    margin-bottom: 60px; /* Ruimte tussen de projecten */
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 2px; /* Strakke, moderne hoekjes */
+    overflow: hidden;
+    align-items: stretch; /* Zorgt dat tekst en foto even hoog zijn */
+}
+
+/* De container voor de foto */
+.project-image-placeholder {
+    flex: 0 0 450px; /* Foto behoudt altijd deze breedte */
+    height: 450px;   /* De hoogte die je wilde behouden */
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #eee; /* Subtiele lijn tussen foto en tekst */
+}
+
+/* De afbeelding zelf: vult de box zonder snijden */
+.project-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* De tekstkolom die perfect aansluit */
+.project-text {
+    flex: 1; /* Neemt alle resterende ruimte in */
+    padding: 40px; /* Ruime padding voor een rustig beeld */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centreert tekst verticaal naast de foto */
+    background-color: #fff;
+}
+
+/* Styling voor de titels en tekst binnen de kaart */
+.project-text h4 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #2549d9;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+}
+
+/* De om-en-om layout (foto links/rechts) */
+.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+.reverse-layout .project-image-placeholder {
+    border-right: none;
+    border-left: 1px solid #eee;
+}
+
+/* Mobiele weergave: stapelen als het scherm te smal wordt */
+@media (max-width: 900px) {
+    .project-card, .reverse-layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-image-placeholder {
+        width: 100%;
+        height: 350px; /* Iets compacter op mobiel */
+        border: none;
+    }
+}
+
+
+
+
+
+body {
+    background-color: #eef4ff; /* De lichtblauwe gloed van de afbeelding */
+    font-family: 'Inter', 'Segoe UI', sans-serif; /* Een moderner alternatief voor Arial */
+}
+
+.main-content-area {
+    background-color: #ffffff;
+    border-radius: 40px; /* De grote ronde hoeken van de witte container */
+    padding: 40px;
+    margin-top: 20px;
+}
+
+
+
+.project-card {
+    background-color: transparent; /* Verwijder de witte achtergrond van de kaart zelf */
+    box-shadow: none; /* De stijl is "flat", dus geen zware schaduwen */
+    gap: 20px;
+}
+
+.project-image-placeholder {
+    background-color: #d1e3ff; /* Het zachte blauw uit de afbeelding */
+    border-radius: 25px; /* De kenmerkende ronde hoeken */
+    overflow: hidden;
+    flex: 0 0 400px;
+    height: 400px;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Zorgt dat je screenshot volledig zichtbaar is */
+    padding: 20px; /* Geeft de afbeelding wat ademruimte in het blauwe vlak */
+}
+
+
+.project-text h4 {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    color: #000; /* Diep zwart voor contrast */
+    margin-bottom: 10px;
+    text-transform: none; /* Glowver gebruikt weinig hoofdletters in titels */
+}
+
+/* De roze/pastel knoppen onderaan de kaarten */
+.button-home, .project-text .more-info {
+    background-color: #f8c8dc; /* Pastel roze zoals de 'Details' knop */
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: 0.8em;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.button-home:hover {
+    transform: scale(1.05);
+}
+
+
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); /* Geeft dat moderne 'glas' effect */
+    border-bottom: none;
+}
+
+.main-nav a {
+    color: #555;
+    font-weight: 400;
+    font-size: 0.9em;
 }

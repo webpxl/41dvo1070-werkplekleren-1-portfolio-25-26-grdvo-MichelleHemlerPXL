@@ -48,3 +48,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // De eerste link ("over mij") krijgt de actieve stijl
     document.querySelector('.main-nav a[data-target="' + initialTarget + '"]').classList.add('active');
 });
+
