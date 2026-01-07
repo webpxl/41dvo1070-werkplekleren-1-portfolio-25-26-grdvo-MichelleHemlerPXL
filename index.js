@@ -49,3 +49,62 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.main-nav a[data-target="' + initialTarget + '"]').classList.add('active');
 });
 
+
+
+
+
+
+
+
+
+// Modal logica
+const modal = document.getElementById("reflectieModal");
+const btn = document.getElementById("openReflectie");
+const span = document.getElementsByClassName("close-button")[0];
+
+// Open de modal als je op de knop klikt
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Sluit de modal als je op het kruisje klikt
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Sluit de modal als je buiten het venster klikt
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+// Modal functionaliteit
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById("reflectieModal");
+    const btn = document.getElementById("openReflectie");
+    const closeBtn = document.querySelector(".close-button");
+
+    // Openen
+    if(btn) {
+        btn.onclick = function() {
+            modal.style.display = "block";
+            document.body.style.overflow = "hidden"; // Voorkomt scrollen op de achtergrond
+        }
+    }
+
+    // Sluiten via kruisje
+    if(closeBtn) {
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    }
+
+    // Sluiten door buiten het venster te klikken
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    }
+});

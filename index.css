@@ -472,3 +472,71 @@ body {
     font-weight: 400;
     font-size: 0.9em;
 }
+
+
+
+
+
+
+
+
+
+
+.button-reflectie:hover {
+    transform: scale(1.05);
+}
+
+
+.modal-body h3 {
+    color: #2549d9;
+    margin-top: 20px;
+}
+/* Styling voor de kop in de modal */
+.modal-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    margin-bottom: 10px;
+}
+
+/* De Download Knop binnen de pop-up */
+.button-download {
+    background-color: #f8c8dc;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button-download:hover {
+    background-color: #f8c8dc;
+    color: black;
+}
+
+/* Tekst styling in de modal */
+.modal-body h3 {
+    margin: 20px 0 10px 0;
+    font-size: 1.2em;
+    color: #2549d9;
+}
+
+.modal-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.modal-body li, .modal-body p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
