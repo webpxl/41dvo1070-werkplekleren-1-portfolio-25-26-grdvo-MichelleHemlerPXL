@@ -113,7 +113,7 @@ body {
 }
 
 .info-with-image .info-text {
-    flex-grow: 1; /* Tekst neemt de rest van de ruimte in */
+    flex-grow: 1;
 }
 
 /* 3. Waarom ik koos (Brede Donkere Card) */
@@ -179,9 +179,7 @@ body {
     flex-direction: row-reverse; /* Zorgt voor de om-en-om afwisseling */
 }
 
-/* ... (De rest van de stijlen, inclusief Contact en Media Queries, blijven zoals in mijn laatste antwoord) ... */
 
-/* === RESPONSIVITEIT: Mobiel (alleen 1 kolom) === */
 @media (max-width: 900px) {
 
     .hero-section {
@@ -400,8 +398,8 @@ h2 {
 
 
 body {
-    background-color: #eef4ff; /* De lichtblauwe gloed van de afbeelding */
-    font-family: 'Inter', 'Segoe UI', sans-serif; /* Een moderner alternatief voor Arial */
+    background-color: #eef4ff;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 .main-content-area {
@@ -414,8 +412,8 @@ body {
 
 
 .project-card {
-    background-color: transparent; /* Verwijder de witte achtergrond van de kaart zelf */
-    box-shadow: none; /* De stijl is "flat", dus geen zware schaduwen */
+    background-color: transparent; /
+    box-shadow: none;
     gap: 20px;
 }
 
@@ -441,12 +439,12 @@ body {
     font-size: 2.2em;
     color: #000; /* Diep zwart voor contrast */
     margin-bottom: 10px;
-    text-transform: none; /* Glowver gebruikt weinig hoofdletters in titels */
+    text-transform: none;
 }
 
 /* De roze/pastel knoppen onderaan de kaarten */
 .button-home, .project-text .more-info {
-    background-color: #f8c8dc; /* Pastel roze zoals de 'Details' knop */
+    background-color: #f8c8dc;
     color: #000;
     border-radius: 50px;
     padding: 10px 25px;
@@ -474,14 +472,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 .button-reflectie:hover {
     transform: scale(1.05);
 }
@@ -500,9 +490,6 @@ body {
     margin-bottom: 10px;
 }
 
-
-
-.
 
 /* Tekst styling in de modal */
 .modal-body h3 {
@@ -583,33 +570,28 @@ body {
     margin-bottom: 10px;
 }
 
-/* De knop ook centreren en wat ruimte geven */
+
 .button-reflectie, .button-download {
     display: inline-block;
-    margin: 20px auto 0 auto; /* Automatische marges links/rechts voor centreren */
+    margin: 20px auto 0 auto;
 }
-
-
-
 
 .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 40px 20px; /* Iets minder padding voor een compacter effect */
+    padding: 40px 20px;
 }
 
 .contact-section h4 {
-    font-size: 1.4em; /* Was 1.8em, nu kleiner en strakker */
+    font-size: 1.4em;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
 .contact-section p {
-    font-size: 0.9em; /* Kleiner lettertype voor tel en email */
-    color: #555;     /* Iets lichter grijs voor een zachtere look */
+    font-size: 0.9em;
+    color: #555;
     margin-bottom: 5px;
 }
-
-
