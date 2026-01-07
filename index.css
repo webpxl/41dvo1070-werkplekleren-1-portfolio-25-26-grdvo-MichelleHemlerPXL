@@ -500,22 +500,9 @@ body {
     margin-bottom: 10px;
 }
 
-/* De Download Knop binnen de pop-up */
-.button-download {
-    background-color: #f8c8dc;
-    color: black;
-    padding: 8px 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 0.8em;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
 
-.button-download:hover {
-    background-color: #f8c8dc;
-    color: black;
-}
+
+.
 
 /* Tekst styling in de modal */
 .modal-body h3 {
@@ -538,5 +525,91 @@ body {
 
 
 
+/* De knop binnenin de modal */
+.button-download {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 35px;
+    background-color: transparent;
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button-download:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Het kruisje om te sluiten */
+.close-button {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 2rem;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-button:hover {
+    color: #f8c8dc;
+}
+
+
+
+.contact-section {
+    display: flex;
+    flex-direction: column; /* Alles onder elkaar zetten */
+    align-items: center;    /* Horizontaal centreren */
+    justify-content: center;/* Verticaal centreren indien nodig */
+    text-align: center;     /* Tekst zelf ook centreren */
+    padding: 60px 20px;     /* Wat extra ruimte boven en onder voor een chique look */
+    width: 100%;
+}
+
+.contact-section h4 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.contact-section p {
+    margin-bottom: 10px;
+}
+
+/* De knop ook centreren en wat ruimte geven */
+.button-reflectie, .button-download {
+    display: inline-block;
+    margin: 20px auto 0 auto; /* Automatische marges links/rechts voor centreren */
+}
+
+
+
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px; /* Iets minder padding voor een compacter effect */
+}
+
+.contact-section h4 {
+    font-size: 1.4em; /* Was 1.8em, nu kleiner en strakker */
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.contact-section p {
+    font-size: 0.9em; /* Kleiner lettertype voor tel en email */
+    color: #555;     /* Iets lichter grijs voor een zachtere look */
+    margin-bottom: 5px;
+}
 
 

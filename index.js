@@ -53,10 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
 // Modal logica
 const modal = document.getElementById("reflectieModal");
 const btn = document.getElementById("openReflectie");
